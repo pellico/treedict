@@ -29,10 +29,10 @@ def makeTDInstance(*args, **kwargs):
     else:
         assert False
 
-md5keyhash = md5(str(time.clock()).encode('ascii'))
+md5keyhash = md5(str(time.perf_counter()).encode('ascii'))
 
 def unique_name():
-    md5keyhash.update(str(time.clock()).encode('ascii'))
+    md5keyhash.update(str(time.perf_counter()).encode('ascii'))
 
     return 'u' + (''.join(str(c) for c in base64.b64encode(md5keyhash.digest()).decode('ascii')
                           if str(c).isalnum()))[:6]

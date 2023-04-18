@@ -303,6 +303,8 @@ cdef _runValueHash(hf, value):
             hf(dumps(value, protocol=2))
         except PicklingError:
             raise HashError()
+        except AttributeError:
+            raise HashError()
 
 ################################################################################
 # Flags and such; trying to be as scaleable

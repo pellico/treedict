@@ -2,3 +2,6 @@
 *~
 *.so
 doc/.build/
+/build/
+/dist/
+/treedict.egg-info/
