@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "treedict"
+version = "0.2.2"
+description="A fast and full-featured dict-like tree container to simplify the bookkeeping surrounding parameters, variables and data."
+authors = ["Hoyt Koepke <hoytak@gmail.com>"]
+
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: BSD License',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Cython',
+    'Programming Language :: C',
+    'Topic :: Scientific/Engineering',
+    'Topic :: Software Development',
+    "Topic :: Software Development :: Libraries :: Python Modules"
+    ]
+#readme = "README.md"
+#packages = [{include = "treedict_0"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.build]
+script = "build.py"
+#generate-setup-file = true
+
+[tool.poetry.group.dev.dependencies]
+cython = "^0.29.36"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "cython==0.29.36", "setuptools>=67.7.2"]
+build-backend = "poetry.core.masonry.api"

@@ -5,3 +5,4 @@ doc/.build/
 /build/
 /dist/
 /treedict.egg-info/
+/setup.py
