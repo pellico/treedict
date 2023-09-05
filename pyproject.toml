@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "treedict"
-version = "0.2.2"
+version = "0.3.0"
 description="A fast and full-featured dict-like tree container to simplify the bookkeeping surrounding parameters, variables and data."
 authors = ["Hoyt Koepke <hoytak@gmail.com>"]
 
